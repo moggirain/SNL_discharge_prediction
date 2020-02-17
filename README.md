@@ -105,13 +105,14 @@ THen I continued to split the independent and dependent variable, X, y using Spl
 -Neural Network 
 
 After running the logistic regression, SVM and Random Forest model for the provided dataset, the baseline accuracy, precision, and recall are shown as below: 
-
+~~~
 model:  Logistic Regression 
+
 validation prediction result: 
 validation accuracy result: 88.25301204819277
 [[149  13]
  [ 26 144]]
- ~~~
+ 
               precision    recall  f1-score   support
 
            0       0.85      0.92      0.88       162
@@ -119,10 +120,12 @@ validation accuracy result: 88.25301204819277
    micro avg       0.88      0.88      0.88       332
    macro avg       0.88      0.88      0.88       332
 weighted avg       0.89      0.88      0.88       332
-
+~~~
+~~~
 test prediction result: 
 test accuracy result: 88.06818181818183
-~~~
+
+
 
               precision    recall  f1-score   support
 
@@ -181,6 +184,7 @@ test accuracy result: 82.95454545454545
    micro avg       0.83      0.83      0.83       352
    macro avg       0.83      0.83      0.83       352
 weighted avg       0.83      0.83      0.83       352
+~~~
 
 For the neural network model, I adopted the script provided by the class. This network architect is a 4-layer NN: 1 input layer (96 nodes), two hidden layers (100 nodes and 10 nodes), and 1 output layer (2 nodes). I set the baseline model with SGD with default momentum, a learning rate of 0.5, and a batch size of 1, for 200 epochs. The baseline result is shown as below: 
 
@@ -205,7 +209,7 @@ I constructed the hyper-parameters to be tuned are C, gamma and kernel, with the
     gammas = [0.001, 0.01, 0.1, 1]
     kernels = ["rbf", "poly","linear"]
 Using the grid search methods, I identified the best parameters and results are below. 
-
+~~~
 Best parameters set found on validation set:
 
 {'C': 0.1, 'gamma': 0.001, 'kernel': 'linear'}
@@ -219,7 +223,7 @@ Detailed classification report:
    micro avg       0.89      0.89      0.89       352
    macro avg       0.89      0.89      0.89       352
 weighted avg       0.89      0.89      0.89       352
-
+~~~
 The whole process takes 95.38233 seconds. The tuning process increased the accuracy from 79.81% to 88.92% . 
 The precision for class 0 increased from 0.77 to 0.86, and for class 1 increased from 0.83 to 0.93. 
 The recall for class 0 increased from 0.88 to 0.94, and for class 1 increased from 0.80 to 0.84. 
@@ -238,7 +242,7 @@ I constructed the hyper-parameters to be tuned are C, gamma and kernel, with the
 
 Using the grid search methods, I identified the best parameters and results are below. 
 
-
+~~~
 Best parameters set found on validation set:
 
 {'criterion': 'entropy', 'max_depth': 16, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 4, 'n_estimators': 50}
@@ -253,7 +257,7 @@ Detailed classification report:
    macro avg       0.86      0.85      0.85       352
 weighted avg       0.86      0.86      0.86       352
 
-
+~~~
 
 The whole process takes 1053 seconds. The tuning process increased the accuracy from 84.03% to 85.5% . 
 The precision for class 0 increased from 0.81 to 0.85, and for class 1 decreased from 0.88 to 0.86. 
