@@ -111,22 +111,22 @@ validation prediction result:
 validation accuracy result: 88.25301204819277
 [[149  13]
  [ 26 144]]
+ 
               precision    recall  f1-score   support
 
            0       0.85      0.92      0.88       162
            1       0.92      0.85      0.88       170
-
    micro avg       0.88      0.88      0.88       332
    macro avg       0.88      0.88      0.88       332
 weighted avg       0.89      0.88      0.88       332
 
 test prediction result: 
 test accuracy result: 88.06818181818183
+
               precision    recall  f1-score   support
 
            0       0.86      0.92      0.89       181
            1       0.91      0.84      0.87       171
-
    micro avg       0.88      0.88      0.88       352
    macro avg       0.88      0.88      0.88       352
 weighted avg       0.88      0.88      0.88       352
@@ -136,22 +136,22 @@ validation prediction result:
 validation accuracy result: 79.81927710843374
 [[135  27]
  [ 40 130]]
+ 
               precision    recall  f1-score   support
 
            0       0.77      0.83      0.80       162
            1       0.83      0.76      0.80       170
-
    micro avg       0.80      0.80      0.80       332
    macro avg       0.80      0.80      0.80       332
 weighted avg       0.80      0.80      0.80       332
 
 test prediction result: 
 test accuracy result: 80.68181818181817
+
               precision    recall  f1-score   support
 
            0       0.78      0.87      0.82       181
            1       0.85      0.74      0.79       171
-
    micro avg       0.81      0.81      0.81       352
    macro avg       0.81      0.80      0.81       352
 weighted avg       0.81      0.81      0.81       352
@@ -161,6 +161,7 @@ validation prediction result:
 validation accuracy result: 84.03614457831326
 [[143  19]
  [ 34 136]]
+ 
               precision    recall  f1-score   support
 
            0       0.81      0.88      0.84       162
@@ -169,14 +170,13 @@ validation accuracy result: 84.03614457831326
    micro avg       0.84      0.84      0.84       332
    macro avg       0.84      0.84      0.84       332
 weighted avg       0.84      0.84      0.84       332
-
 test prediction result: 
 test accuracy result: 82.95454545454545
+
               precision    recall  f1-score   support
 
            0       0.81      0.87      0.84       181
            1       0.85      0.78      0.82       171
-
    micro avg       0.83      0.83      0.83       352
    macro avg       0.83      0.83      0.83       352
 weighted avg       0.83      0.83      0.83       352
@@ -215,7 +215,6 @@ Detailed classification report:
 
            0       0.86      0.94      0.90       181
            1       0.93      0.84      0.88       171
-
    micro avg       0.89      0.89      0.89       352
    macro avg       0.89      0.89      0.89       352
 weighted avg       0.89      0.89      0.89       352
@@ -249,7 +248,6 @@ Detailed classification report:
 
            0       0.85      0.87      0.86       181
            1       0.86      0.84      0.85       171
-
    micro avg       0.86      0.86      0.86       352
    macro avg       0.86      0.85      0.85       352
 weighted avg       0.86      0.86      0.86       352
