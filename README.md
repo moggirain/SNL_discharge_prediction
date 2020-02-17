@@ -53,7 +53,7 @@ The data preprocessing includes 9 steps:
    - Selected 20 numerical variables with 190 categorical variables 
    - Total 210 variables 
 
- ***************Exploratory_Data_Analysis*****************
+# Exploratory_Data_Analysis
 
  1) Distribution of label
 
@@ -92,19 +92,17 @@ The data preprocessing includes 9 steps:
 
 Please write up a README that includes a description of how you preprocessed (and split) the data, and run time instructions for how to train and test the models you developed. Please also include accuracy, precision, and recall for each of your models, as calculated on the testing set.
 
-
-
-*****************Train_test_sets_split*********************
+# Train_test_sets_split
 
 I wrote a function train_validate_test_split to randomized set creation from the data to split the whole datasets into train, val and test sets with 70-15-15 ratio. 
 THen I continued to split the independent and dependent variable, X, y using Split function. After splitting the train, validate and test dataset, I checked the class distribution to avoid the class imbalance issue. The ratio of 1 to 0 is 2.63:1. 
 
-**********Modeling**************
+# Modeling
 
 -Logistic Regression 
 -SVM
 -Random Forest
 -Neural Network 
 
-**********Hyperparameter Tuning**************
+# Hyperparameter_Tuning
 -Grid Search 
